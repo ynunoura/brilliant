@@ -1,0 +1,161 @@
+
+	.btn-steel {
+		border: 2px solid;
+		border-image: url(../img/silver.jpg) 30 round;
+	}
+
+	h1,h2,h3,h4,h5 {
+		color: #FFF;
+		font-family: "Sawarabi Mincho"; 
+		font-weight: lighter;
+		text-shadow: 0 0 3px #000;
+	}
+
+	p, a {
+		font-family: "Sawarabi Mincho";
+	}
+
+	.section-title-wrapper {
+		border-top: 5px silver solid;
+		border-bottom: 5px silver solid;
+		width: 100%;
+		height: 150px;
+		background-image: url(../img/luxury-bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-image: url(../img/silver.jpg) 30 round;
+	}
+/** CAST **/
+/** ABOUT **/
+	
+	.about {
+		padding: 0;
+		margin: 0;
+	}
+
+	.about-text, .access-text{
+		background: black;
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0, rgba(96, 96, 96, 1) 100%, rgba(96, 96, 96, 1) 100%, rgba(0, 0, 0, 1) 100%);
+        background-size:  100%;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        height: 350px;
+	}	
+
+	
+
+/** FOOTER **/
+
+	footer a {
+		color: #FFF!important;
+	}
+
+/** SLIDER CSS **/
+	.slider {
+	  max-width: 100%;
+	  height: 300px;
+	  margin: 0px auto;
+	  position: relative;
+	  padding: 0px;
+	}
+	.slide1,.slide2,.slide3,.slide4,.slide5 {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	}
+	.slide1 {
+	  background: url(../img/bottle.png)no-repeat center;
+	      background-size: cover;
+	    animation:fade 8s infinite;
+	-webkit-animation:fade 8s infinite;
+
+	} 
+	.slide2 {	
+	  background: url(../img/gion.png)no-repeat center;
+	      background-size: cover;
+	    animation:fade2 8s infinite;
+	-webkit-animation:fade2 8s infinite;
+	}
+	.slide3 {
+	    background: url(../img/moet.png)no-repeat center;
+	      background-size: cover;
+	    animation:fade3 8s infinite;
+	-webkit-animation:fade3 8s infinite;
+	}
+	@keyframes fade
+	{
+	  0%   {opacity:1}
+	  33.333% { opacity: 0}
+	  66.666% { opacity: 0}
+	  100% { opacity: 1}
+	}
+	@keyframes fade2
+	{
+	  0%   {opacity:0}
+	  33.333% { opacity: 1}
+	  66.666% { opacity: 0 }
+	  100% { opacity: 0}
+	}
+	@keyframes fade3
+	{
+	  0%   {opacity:0}
+	  33.333% { opacity: 0}
+	  66.666% { opacity: 1}
+	  100% { opacity: 0}
+	}
+
+
+
+/*** ACCESS PAGE ***/
+	
+	.access-text ul li {
+		color: #000!important;
+	}
+
+	.access-text .list-group {
+		border: 5px silver solid;
+		width: 100%;
+		border-image: url(../img/silver.jpg) 30 round;
+	}
+
+	.access-text a {
+		font-size: 2em;
+	}
+
+	/** MEDIA QUERIES FOR IPAD AND LARGER **/
+
+
+	@media only screen 
+	and (min-device-width : 768px) {
+
+		p {
+			font-size: 1.5em;
+		}
+
+		h3 {
+			font-size: 3em;
+		}
+		
+		/*+ SLIDER **/
+		.slideshow-wrapper {
+			height: 600px;
+		}
+		.slider {
+			height: 100%;
+		}
+
+		/** SECTION TITLE **/
+
+		.section-title-wrapper {
+			height: 250px;
+		}
+
+		.section-title-wrapper img {
+			height: 100px;
+		}
+
+		.section-title-wrapper h3 {
+			font-size: 3em;
+		}
+
+	}
